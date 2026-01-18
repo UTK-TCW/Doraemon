@@ -5,7 +5,13 @@ from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 import joblib
 import time
+import os
 
+NLTK_DATA_PATH = os.path.join(os.getcwd(), "nltk_data")
+nltk.data.path.append(NLTK_DATA_PATH)
+
+nltk.download("punkt", download_dir=NLTK_DATA_PATH)
+nltk.download("punkt_tab", download_dir=NLTK_DATA_PATH)
 # --- 1. Page Config ---
 st.set_page_config(
     page_title="Melody Mind",
