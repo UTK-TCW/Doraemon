@@ -145,7 +145,7 @@ with col2:
                 stemmed_tokens = [stemmer.stem(w) for w in filtered_tokens]
 
                 if not stemmed_tokens:
-                    st.warning("⚠️ Please enter valid lyrics.")
+                    st.warning("⚠️ Dhang ka daal re.")
                 else:
                     final_input = [" ".join(stemmed_tokens)] 
                     
