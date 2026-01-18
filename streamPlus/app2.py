@@ -87,8 +87,8 @@ def load_models():
         nltk.download('punkt')
         nltk.download('stopwords')
     
-    vec = joblib.load('tfidf_vectorizer.joblib') 
-    mod = joblib.load('svm_model.joblib')
+    vec = joblib.load('./streamPlus/tfidf_vectorizer.joblib') 
+    mod = joblib.load('./streamPlus/svm_model.joblib')
     return vec, mod
 
 try:
