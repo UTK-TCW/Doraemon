@@ -127,7 +127,7 @@ col1, col2 = st.columns([3, 2])
 
 with col1:
     user_input = st.text_area("Paste Lyrics:", height=250, placeholder="Type lyrics here...")
-    predict_btn = st.button("Analyze Text")
+    predict_btn = st.button("Analyze Genre")
 
 with col2:
     st.markdown("<br>", unsafe_allow_html=True) 
