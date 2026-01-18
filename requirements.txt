@@ -1,4 +1,0 @@
-nltk
-streamlit
-scikit-learn
-joblib
